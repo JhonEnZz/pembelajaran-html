@@ -1,0 +1,136 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('../images/background.jpg'); /* Ganti dengan path ke gambar background Anda */
+    background-size: cover; /* Menyesuaikan ukuran gambar dengan area yang tersedia */
+    background-position: center; /* Menempatkan gambar di tengah */
+    background-attachment: fixed; /* Membuat background tetap di tempat saat scroll */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+}
+
+.no-background {
+    background-image: none; /* Menghapus gambar latar belakang */
+}
+
+
+header {
+    background: rgba(0, 0, 0, 0.7); /* Transparansi untuk navbar */
+}
+
+.navbar {
+    background-color: #343a40; /* Warna navbar */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #cfd8dc;
+}
+
+.container {
+    padding: 2rem;
+}
+
+section {
+    background: rgba(0, 0, 0, 0.5); /* Background hitam sedikit transparan untuk kontras */
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+button, .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+pre {
+    background-color: #333;
+    color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.contact-icon {
+    display: inline-block;
+    margin: 10px;
+}
+
+.contact-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/background.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.audio-wrapper {
+    margin-bottom: 1rem;
+}
+
+.button-wrapper {
+    text-align: left;
+}
+
+.button-wrapper .btn {
+    display: inline-block;
+}
+
+
+.custom-audio-player {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.custom-audio-player .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.custom-audio-player .controls button {
+    background: #333;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.custom-audio-player .controls button:hover {
+    background: #555;
+}
+
+.custom-audio-player .controls input[type="range"] {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.custom-audio-player .controls span {
+    font-size: 14px;
+}

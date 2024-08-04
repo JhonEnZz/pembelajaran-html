@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulai Belajar HTML</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="no-background">
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ENZZ CODE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="learn.html">Mulai Belajar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Hubungi Kami</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <section id="learn">
+            <h1>Pengenalan HTML</h1>
+            <p>HTML (HyperText Markup Language) adalah bahasa markup standar yang digunakan untuk membuat halaman web. HTML menggambarkan struktur halaman web dengan menggunakan berbagai elemen dan tag. Setiap elemen HTML memiliki fungsi tertentu, seperti menampilkan teks, gambar, video, dan berbagai konten lainnya.</p>
+            
+            <h2>Sejarah HTML</h2>
+            <p>HTML pertama kali dikembangkan oleh Tim Berners-Lee pada akhir 1980-an dan awal 1990-an. HTML telah mengalami banyak perubahan dan pembaruan sejak saat itu. Versi terbaru dari HTML adalah HTML5, yang diperkenalkan pada tahun 2014 dengan banyak fitur baru yang mendukung multimedia, grafis, dan berbagai fungsionalitas modern lainnya.</p>
+            
+            <h2>Pembelajaran Dasar HTML</h2>
+            <h3>1. Struktur Dasar HTML</h3>
+            <p>Setiap dokumen HTML dimulai dengan deklarasi <code>&lt;!DOCTYPE html&gt;</code> yang menunjukkan versi HTML yang digunakan. Berikut adalah contoh struktur dasar dokumen HTML:</p>
+            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Belajar HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Konten halaman web Anda akan diletakkan di sini --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+            
+            <h3>2. Elemen Heading</h3>
+            <p>Heading digunakan untuk membuat judul dan subjudul dalam dokumen HTML. Ada enam tingkat heading, dari <code>&lt;h1&gt;</code> hingga <code>&lt;h6&gt;</code>, dengan <code>&lt;h1&gt;</code> sebagai yang terbesar dan <code>&lt;h6&gt;</code> sebagai yang terkecil.</p>
+            <pre><code class="language-html">&lt;h1&gt;Judul Utama&lt;/h1&gt;
+&lt;h2&gt;Subjudul&lt;/h2&gt;
+&lt;h3&gt;Sub-subjudul&lt;/h3&gt;
+            </code></pre>
+
+            <h3>3. Elemen Paragraf</h3>
+            <p>Paragraf digunakan untuk menampilkan teks dalam bentuk blok. Elemen ini dilambangkan dengan tag <code>&lt;p&gt;</code>.</p>
+            <pre><code class="language-html">&lt;p&gt;Ini adalah paragraf pertama dalam HTML.&lt;/p&gt;
+&lt;p&gt;Ini adalah paragraf kedua.&lt;/p&gt;
+            </code></pre>
+            
+            <h3>4. Elemen Tautan</h3>
+            <p>Tautan digunakan untuk membuat hyperlink ke halaman lain atau sumber daya lain. Elemen ini dilambangkan dengan tag <code>&lt;a&gt;</code>.</p>
+            <pre><code class="language-html">&lt;a href="https://www.example.com"&gt;Ini adalah tautan&lt;/a&gt;
+            </code></pre>
+
+            <h3>5. Elemen Gambar</h3>
+            <p>Gambar digunakan untuk menampilkan gambar dalam dokumen HTML. Elemen ini dilambangkan dengan tag <code>&lt;img&gt;</code> dan menggunakan atribut <code>src</code> untuk menentukan sumber gambar.</p>
+            <pre><code class="language-html">&lt;img src="image.jpg" alt="Contoh Gambar"&gt;
+            </code></pre>
+
+            <h3>6. Elemen Daftar</h3>
+            <p>HTML menyediakan dua jenis daftar: <strong>ordered list</strong> (daftar berurutan) dan <strong>unordered list</strong> (daftar tidak berurutan). Ordered list menggunakan tag <code>&lt;ol&gt;</code> dan unordered list menggunakan tag <code>&lt;ul&gt;</code>.</p>
+            <pre><code class="language-html">&lt;h3&gt;Ordered List&lt;/h3&gt;
+&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;Unordered List&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Item A&lt;/li&gt;
+    &lt;li&gt;Item B&lt;/li&gt;
+    &lt;li&gt;Item C&lt;/li&gt;
+&lt;/ul&gt;
+            </code></pre>
+
+            <h3>7. Elemen Tabel</h3>
+            <p>Tabel digunakan untuk menampilkan data dalam bentuk grid. Elemen ini dilambangkan dengan tag <code>&lt;table&gt;</code>, dengan baris tabel menggunakan tag <code>&lt;tr&gt;</code> dan sel menggunakan tag <code>&lt;td&gt;</code> untuk data dan <code>&lt;th&gt;</code> untuk header.</p>
+            <pre><code class="language-html">&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+            </code></pre>
+            
+            <h3>8. Elemen Form</h3>
+            <p>Formulir digunakan untuk mengumpulkan input pengguna. Elemen ini dilambangkan dengan tag <code>&lt;form&gt;</code> dan menggunakan berbagai elemen input seperti <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, dan <code>&lt;button&gt;</code>.</p>
+            <pre><code class="language-html">&lt;form action="/submit" method="post"&gt;
+    &lt;label for="name"&gt;Nama:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+            </code></pre>
+            
+            <h3>Contoh Kode HTML Lengkap</h3>
+            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Belajar HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Judul Utama&lt;/h1&gt;
+    &lt;p&gt;Ini adalah paragraf pertama dalam HTML.&lt;/p&gt;
+    &lt;a href="https://www.example.com"&gt;Ini adalah tautan&lt;/a&gt;
+    &lt;img src="image.jpg" alt="Contoh Gambar"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+            
+            <h2>Video Refrensi</h2>
+            <p>Berikut adalah video yang bisa membantu Anda memahami HTML lebih dalam:</p>
+            <div class="embed-responsive embed-responsive-16by9">
+                <video class="embed-responsive-item" controls>
+                    <source src="videos/tutorial-html.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung elemen video.
+                </video>
+            </div>
+
+            <div class="contact-prompt mt-4">
+                <p>Butuh bantuan kami? <a href="contact.html" class="btn btn-primary">Hubungi Kami Sekarang</a></p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p>JHON RIHOT MANIK</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
